@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+    <!-- Background Container -->
+    <rect width="96" height="96" rx="24" fill="url(#paint0_linear)" fill-opacity="0.1"/>
+
+    <!-- Neural Network Nodes and Connections -->
+    <!-- Input Layer -->
+    <circle cx="24" cy="28" r="8" fill="url(#paint1_linear)"/>
+    <circle cx="24" cy="48" r="8" fill="url(#paint1_linear)"/>
+    <circle cx="24" cy="68" r="8" fill="url(#paint1_linear)"/>
+
+    <!-- Hidden Layer -->
+    <circle cx="48" cy="20" r="8" fill="url(#paint1_linear)"/>
+    <circle cx="48" cy="48" r="8" fill="url(#paint1_linear)"/>
+    <circle cx="48" cy="76" r="8" fill="url(#paint1_linear)"/>
+
+    <!-- Output Layer -->
+    <circle cx="72" cy="28" r="8" fill="url(#paint1_linear)"/>
+    <circle cx="72" cy="48" r="8" fill="url(#paint1_linear)"/>
+    <circle cx="72" cy="68" r="8" fill="url(#paint1_linear)"/>
+
+    <!-- Connection Lines -->
+    <path d="M32 28L40 20M32 28L40 48M32 28L40 76" stroke="url(#paint2_linear)" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M32 48L40 20M32 48L40 48M32 48L40 76" stroke="url(#paint2_linear)" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M32 68L40 20M32 68L40 48M32 68L40 76" stroke="url(#paint2_linear)" stroke-width="2" stroke-opacity="0.6"/>
+
+    <path d="M56 20L64 28M56 20L64 48M56 20L64 68" stroke="url(#paint2_linear)" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M56 48L64 28M56 48L64 48M56 48L64 68" stroke="url(#paint2_linear)" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M56 76L64 28M56 76L64 48M56 76L64 68" stroke="url(#paint2_linear)" stroke-width="2" stroke-opacity="0.6"/>
+
+    <!-- Data Flow Animation -->
+    <circle cx="36" cy="34" r="2" fill="#8AE6CF">
+        <animate attributeName="cx" from="32" to="40" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="cy" from="28" to="48" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Definitions -->
+    <defs>
+        <!-- Background Gradient -->
+        <linearGradient id="paint0_linear" x1="0" y1="0" x2="96" y2="96" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#8AE6CF" stop-opacity="0.2"/>
+            <stop offset="1" stop-color="#7C3AE7" stop-opacity="0.2"/>
+        </linearGradient>
+
+        <!-- Node Gradient -->
+        <linearGradient id="paint1_linear" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#8AE6CF"/>
+            <stop offset="1" stop-color="#7C3AE7"/>
+        </linearGradient>
+
+        <!-- Connection Line Gradient -->
+        <linearGradient id="paint2_linear" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#8AE6CF"/>
+            <stop offset="1" stop-color="#7C3AE7"/>
+        </linearGradient>
+    </defs>
+</svg>

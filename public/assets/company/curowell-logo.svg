@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Location Pin Base -->
+    <path d="M100 15c-35.3 0-64 28.7-64 64 0 35.3 64 106 64 106s64-70.7 64-106c0-35.3-28.7-64-64-64z"
+          fill="#48BB78" stroke="#2F855A" stroke-width="4"/>
+
+    <!-- Printer Body -->
+    <rect x="75" y="70" width="50" height="30" rx="6"
+          fill="#4A5568" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Printer Top -->
+    <rect x="78" y="63" width="44" height="10" fill="#2D3748" rx="4"/>
+
+    <!-- Paper Slot -->
+    <rect x="80" y="85" width="40" height="4" fill="#E2E8F0"/>
+
+    <!-- Paper Coming Out -->
+    <rect x="82" y="89" width="36" height="15" fill="#EDF2F7" stroke="#CBD5E0" stroke-width="1"/>
+
+    <!-- Control Panel -->
+    <rect x="115" y="66" width="8" height="7" fill="#2D3748" rx="2"/>
+
+    <!-- Control Buttons -->
+    <circle cx="118" cy="69" r="1.5" fill="#ffffff"/>
+    <circle cx="118" cy="72" r="1.5" fill="#ffffff"/>
+
+    <!-- Paper Tray -->
+    <rect x="80" y="105" width="40" height="6" fill="#2D3748" rx="2"/>
+
+    <!-- Status Light -->
+    <circle cx="90" cy="65" r="2" fill="#48BB78">
+        <animate attributeName="opacity"
+                 values="1;0.3;1"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Subtle Glow Effect -->
+    <circle cx="100" cy="90" r="28"
+            fill="none" stroke="#ffffff" stroke-width="1" opacity="0.2">
+        <animate attributeName="r"
+                 values="28;33;28"
+                 dur="3s"
+                 repeatCount="indefinite"/>
+        <animate attributeName="opacity"
+                 values="0.2;0;0.2"
+                 dur="3s"
+                 repeatCount="indefinite"/>
+    </circle>
+</svg>
