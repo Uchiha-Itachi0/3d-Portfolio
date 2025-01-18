@@ -80,7 +80,7 @@ function Contact() {
       id="contact"
     >
       <p className={"sectionSubText text-ctnSecondaryDark"}>Hey there! Got something on your mind?</p>
-      <p className={"mt-3 sectionSubSmallText text-ctnSecondaryDark"}>Drop me a line and let's chat! Whether it's about web development, Machine Learning, App Development, your favorite tech memes, or just a good old-fashioned brainstorm, I'm all ears. Don't worry, I promise to respond faster than a web page loads on a gigabit connection!</p>
+      <p className={"mt-3 sectionSubSmallText text-ctnSecondaryDark"}>Drop me a line and let&apos;s chat! Whether it&apos;s about web development, Machine Learning, App Development, your favorite tech memes, or just a good old-fashioned brainstorm, I&apos;m all ears. Don&apos;t worry, I promise to respond faster than a web page loads on a gigabit connection!</p>
       <h3 className={"sectionHeadText text-ctnPrimaryDark"}>Contact.</h3>
 
       <form
