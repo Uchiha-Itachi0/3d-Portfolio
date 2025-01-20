@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { socials } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import {socials, staticText} from "@/constants";
+import { fadeIn, textVariant } from "@/utils/motion";
 import EmailIcon from "./../public/assets/icons/email.svg";
 
 function About() {
@@ -28,29 +28,19 @@ function About() {
         className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
-          I am Anubhav Shukla, a Full Stack Developer and Machine
-          Learning enthusiast with a strong foundation in software
-          development and intelligent systems. Currently pursuing
-          a B.Tech in Electronic and Telecommunications at
-          Bharati Vidyapeeth University, Pune, I specialize
-          in integrating machine learning technologies to
-          create innovative, user-centric applications. My
-          expertise spans Python, TensorFlow, PyTorch, and
-          various web development frameworks, enabling me
-          to develop and optimize solutions that enhance user
-          experiences and solve complex problems through AI.
+          {staticText.aboutMain}
           <br className="sm:block hidden" />
-          Let&apos;s collaborate to bring your ideas to life!
+          {staticText.aboutSub}
         </div>
         <div className="w-fit break-words">
           <Link
-            href="mailto:anubhav008shukla@gmail.com"
+            href={`mailto:${staticText.mail}`}
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
           >
             <EmailIcon className="w-[30px] h-[30px]" />
-            anubhav008shukla@gmail.com
+            {staticText.mail}
           </Link>
         </div>
         <div className="flex gap-5 items-center">

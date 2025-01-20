@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import DOMPurify from "dompurify";
 
 import { slideIn } from "@/utils/motion";
+import {staticText} from "@/constants";
 
 function Contact() {
   const formRef = useRef();
@@ -44,9 +45,9 @@ function Contact() {
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         {
           from_name: DOMPurify.sanitize(form.name),
-          to_name: "Anubhav Shukla",
+          to_name: staticText.owner,
           from_email: DOMPurify.sanitize(form.email),
-          to_email: "anubhav008shukla@gmail.com",
+          to_email: staticText.mail,
           message: DOMPurify.sanitize(form.message),
         },
         process.env.NEXT_PUBLIC_EMAILJS_KEY

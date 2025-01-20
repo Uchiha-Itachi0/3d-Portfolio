@@ -1,14 +1,29 @@
 import GithubIcon from "./../public/assets/icons/github.svg";
 import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
-import XIcon from "./../public/assets/icons/x.svg";
 import InstagramIcon from "./../public/assets/icons/instagram.svg";
-import FrontendIcon from "./../public/assets/icons/frontend.svg";
-import LeaderShipIcon from "./../public/assets/icons/leadership.svg";
 import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
-import FreelancerIcon from "./../public/assets/icons/freelance.svg";
-import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
 import MachineLearningIcon from './../public/assets/icons/machine_learning.svg'
+
+const staticText = {
+  owner: "Anubhav Shukla",
+  designation: "Full-Stack Developer",
+  aboutMain: "I am Anubhav Shukla, a Full Stack Developer and Machine\n" +
+      "          Learning enthusiast with a strong foundation in software\n" +
+      "          development and intelligent systems. Currently pursuing\n" +
+      "          a B.Tech in Electronic and Telecommunications at\n" +
+      "          Bharati Vidyapeeth University, Pune, I specialize\n" +
+      "          in integrating machine learning technologies to\n" +
+      "          create innovative, user-centric applications. My\n" +
+      "          expertise spans Python, TensorFlow, PyTorch, and\n" +
+      "          various web development frameworks, enabling me\n" +
+      "          to develop and optimize solutions that enhance user\n" +
+      "          experiences and solve complex problems through AI.",
+  aboutSub: "Let's collaborate to bring your ideas to life!",
+  mail: "anubhav008shukla@gmail.com",
+
+}
+
 const navLinks = [
   {
     id: "about",
@@ -519,6 +534,7 @@ const heroTexts = [
 ];
 
 export {
+  staticText,
   navLinks,
   services,
   technologies,

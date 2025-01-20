@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-
-import { navLinks } from "@/constants";
+import { navLinks, staticText } from "@/constants";
 import ThemeButton from "./ThemeButton";
 import Menu from "./../public/assets/icons/menu.svg";
 import Close from "./../public/assets/icons/close.svg";
@@ -70,10 +69,10 @@ function Navbar() {
 						</div>
 						<Link href="/">
 							<p className="dark:text-ctnPrimaryDark text-ctnPrimaryLight text-[18px] font-bold cursor-pointer flex ">
-								Anubhav Shukla &nbsp;
+								{staticText.owner} &nbsp;
 								<span className="lg:block hidden">
 									{" "}
-									| Full-Stack Developer
+									| {staticText.designation}
 								</span>
 							</p>
 						</Link>

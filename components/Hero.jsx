@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 
 import { ComputersCanvas } from "./canvas";
 import { fadeIn, textVariant } from "@/utils/motion";
-import { heroTexts } from "@/constants";
+import {heroTexts, staticText} from "@/constants";
 
 function Hero({ loading, isMobile }) {
   return (
@@ -26,7 +26,7 @@ function Hero({ loading, isMobile }) {
         >
           <h1 className={`heroHeadText`}>
             Hi, I&apos;m{" "}
-            <span className="dark:text-five text-primary">Anubhav</span>
+            <span className="dark:text-five text-primary">{staticText.owner.split(' ')[0]}</span>
           </h1>
           <p className={`heroSubText mt-2 tracking-wide`}>
             <TypeAnimation
